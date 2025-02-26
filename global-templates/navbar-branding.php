@@ -9,20 +9,22 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+$uploads = wp_upload_dir();
+
 if ( ! has_custom_logo() ) { ?>
 
 	<?php if ( is_front_page() && is_home() ) : ?>
 
 		<h1 class="navbar-brand mb-0">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-				<img src="http://localhost/popewaller/wp-content/uploads/2025/02/pope-waller-logo-mark-tan.svg" width="100" alt="" role="presentation" />
+				<?php bloginfo( 'name' ); ?>
 			</a>
 		</h1>
 
 	<?php else : ?>
 
 		<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-			<img src="http://localhost/popewaller/wp-content/uploads/2025/02/pope-waller-logo-mark-tan.svg" width="100" alt="" role="presentation" />
+			<?php echo '<img src="' . esc_url( $uploads['baseurl'] . '/2025/02/pope-waller-logo-mark-tan.svg' ) . '" width="100" alt="" role="presentation">'; ?>
 		</a>
 
 	<?php endif; ?>

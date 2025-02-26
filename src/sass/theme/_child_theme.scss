@@ -2,18 +2,35 @@
 	font-family: $font;
 }
 
+
+body{
+	max-width:120rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.view{outline:1px solid #0f0;}
+
+
 .nav-gradient{
 	  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.75));
 }
 p{
-	&.copyright{
-		font-size:80%;
-		color: #707070;
-		margin-bottom:0;
-	}
+	font-family: $font2;
+	font-size: 1.125rem;
+		
+		&.copyright{
+			font-size:80%;
+			color: #707070;
+			margin-bottom:0;
+		}
 }
-.view{outline:1px solid #0f0;}
 
+.partner-title{
+	font-family: $font;
+	font-size:2.5rem;
+	}
 
 .bg{
 	background-size:cover;
@@ -23,7 +40,19 @@ p{
   flex:align-items-center;
 }
 
+.accent{
+background-repeat:no-repeat;
 
+&.left-center{
+background-position:left 2rem bottom 50%;
+}
+&.right-center{
+background-position:right 2rem bottom 50%;
+}
+&.right-bottom{
+background-position:right 2rem bottom 1rem;
+}
+}
 
 // font-family: "nimbus-sans", sans-serif;
 // font-weight: 300;
@@ -53,21 +82,36 @@ address{
 
 h1{
 	text-transform:uppercase;
-	color: $white;
+	//color: $white;
 }
 
 
 .bg-blue{
 	background-color: $blue;
-	color: $white;
+	color: $white !important;
+	
+	.partner-title{
+		color: $tan !important;
+	}
 }
 
 .bg-tan{
 	background-color: $tan;
+	color: $brown !important;
+	p{
+		color: $light-gray;
+	}
+	.partner-title{
+			color: $blue;
 }
-
+}
 .bg-brown{
 	background-color: $brown;
+}
+
+.bg-lightbrown{
+	background-color: $light-brown;
+	color: $white;
 }
 
 .bg-gray{

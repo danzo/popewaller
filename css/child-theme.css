@@ -17874,18 +17874,33 @@ figure.woocommerce-product-gallery__wrapper {
   font-family: "new-hero", sans-serif;
 }
 
+body {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view {
+  outline: 1px solid #0f0;
+}
+
 .nav-gradient {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
 }
 
+p {
+  font-family: "nimbus-sans", sans-serif;
+  font-size: 1.125rem;
+}
 p.copyright {
   font-size: 80%;
   color: #707070;
   margin-bottom: 0;
 }
 
-.view {
-  outline: 1px solid #0f0;
+.partner-title {
+  font-family: "new-hero", sans-serif;
+  font-size: 2.5rem;
 }
 
 .bg {
@@ -17893,6 +17908,19 @@ p.copyright {
   background-position: center;
   background-repeat: no-repeat;
   flex: align-items-center;
+}
+
+.accent {
+  background-repeat: no-repeat;
+}
+.accent.left-center {
+  background-position: left 2rem bottom 50%;
+}
+.accent.right-center {
+  background-position: right 2rem bottom 50%;
+}
+.accent.right-bottom {
+  background-position: right 2rem bottom 1rem;
 }
 
 address p, address a {
@@ -17910,20 +17938,34 @@ address a:hover {
 
 h1, .h1 {
   text-transform: uppercase;
-  color: #fff;
 }
 
 .bg-blue {
   background-color: #013C4B;
-  color: #fff;
+  color: #fff !important;
+}
+.bg-blue .partner-title {
+  color: #D7D1BF !important;
 }
 
 .bg-tan {
   background-color: #D7D1BF;
+  color: #231F20 !important;
+}
+.bg-tan p {
+  color: #707070;
+}
+.bg-tan .partner-title {
+  color: #013C4B;
 }
 
 .bg-brown {
   background-color: #231F20;
+}
+
+.bg-lightbrown {
+  background-color: #7C6E65;
+  color: #fff;
 }
 
 .bg-gray {
