@@ -42,11 +42,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.65625rem + 4.875vw);
+  font-size: calc(1.625rem + 4.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 5.3125rem;
+    font-size: 5rem;
   }
 }
 
@@ -2724,7 +2724,7 @@ progress {
 }
 
 .fs-1 {
-  font-size: calc(1.65625rem + 4.875vw) !important;
+  font-size: calc(1.625rem + 4.5vw) !important;
 }
 
 .fs-2 {
@@ -7553,7 +7553,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 5.3125rem !important;
+    font-size: 5rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
@@ -7999,7 +7999,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 
 .editor-post-title .editor-post-title__input {
-  font-size: 5.3125rem;
+  font-size: 5rem;
   font-weight: 100;
 }
 
