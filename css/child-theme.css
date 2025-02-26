@@ -126,11 +126,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.40625rem + 1.875vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2.8125rem;
   }
 }
 
@@ -9667,7 +9667,7 @@ textarea.form-control-lg {
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: calc(1.40625rem + 1.875vw) !important;
 }
 
 .fs-3 {
@@ -14495,7 +14495,7 @@ textarea.form-control-lg {
     font-size: 5rem !important;
   }
   .fs-2 {
-    font-size: 2rem !important;
+    font-size: 2.8125rem !important;
   }
   .fs-3 {
     font-size: 1.75rem !important;
@@ -17938,6 +17938,10 @@ address a:hover {
 
 h1, .h1 {
   text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-weight: 500;
 }
 
 .bg-blue {
