@@ -62,8 +62,12 @@ background-position:right 2rem bottom 1rem;
 
 address{
 	p, a{
-		font-size:2.5rem;
+		font-size:1.5rem;
 		color: $tan;
+		@include media-breakpoint-up(lg) {
+			font-size:2rem;
+		}
+
 }
 	a{
 		&:hover{
@@ -85,8 +89,16 @@ h1{
 	//color: $white;
 }
 
-h2{
+h2,h3{
 	font-weight:500;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 2px solid;
+    opacity: 1;
 }
 
 
@@ -101,30 +113,50 @@ h2{
 
 .bg-tan{
 	background-color: $tan;
-	color: $brown !important;
+	color: $dark-gray !important;
 	p{
-		color: $light-gray;
+		color: $dark-gray;
 	}
 	.partner-title{
 			color: $blue;
 }
 }
+
 .bg-brown{
 	background-color: $brown;
 }
 
-.bg-lightbrown{
+.bg-light-brown{
 	background-color: $light-brown;
 	color: $white;
+}
+
+.bg-light-gray{
+	background-color: $light-gray;
 }
 
 .bg-gray{
 	background-color: $gray-600;
 }
 
-.bg-darkgray{
+.bg-dark-gray{
 	background-color: $dark-gray;
 }
+
+.bg-white-75{
+	background-color: $white-75;
+}
+
+// .btn-tan{
+// 	background-color: $tan;
+// 	color: $white;
+// 	&:hover{
+// 			background-color: $tan !important;
+
+//   filter: brightness(85%);
+// 	}
+// }
+
 
 .text-white{
 color: #fff;
@@ -182,3 +214,95 @@ color: $tan;
     border-left: 1px solid #000;
         background-color: $tan;
 }
+
+
+// SPECIAL EXCEPTIONS...
+
+.tile{
+	padding: 2rem;
+	display:flex;
+	flex-direction:column;
+
+	&.industry{
+		background-color: $white-75;
+		height:100%;
+			
+			.tile-title{
+				h3{
+					font-weight:normal;
+					color: $blue;
+					text-align:center;
+				}
+			}
+			
+			.tile-text{
+				color: $dark-gray;
+			    display: flex;
+      			flex-direction: column;
+      			margin-top: auto;
+      			padding-top:1rem;
+			}
+			
+			.tile-link{
+			 	text-align:right;
+				&a{
+			 	margin-top:auto;
+				font-family: $font2;
+				font-weight: 700;
+				color: $blue;
+				align-self:flex-end;
+				}
+			}
+	}
+}
+
+
+
+
+p:empty{
+	margin:0;
+}
+
+
+
+
+
+
+// Contact page
+
+.location-overlay{
+	
+	&.desktop{
+		position:absolute;
+		max-width:90rem;
+		bottom:-32%;
+		left: 0; 
+		right: 0; 
+		margin-inline: auto; 
+		z-index:9999;
+	}
+	
+	&.mobile{
+		position:relative;
+	}
+	
+}
+
+
+
+
+.wpcf7 {
+    max-width: 1200px !important;
+}
+
+.form-control {
+	border-radius:0;
+}
+
+
+
+
+
+
+
+

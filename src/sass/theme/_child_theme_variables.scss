@@ -4,7 +4,8 @@
 
 @import url("https://use.typekit.net/thc3faf.css");
 
-
+$white: #ffffff;
+$white-75: rgba($white,0.75);
 $blue: #013C4B;
 $primary: $blue;
 $tan: #D7D1BF;
@@ -12,5 +13,20 @@ $brown: #231F20;
 $light-brown: #7C6E65;
 $dark-gray: #231f20;
 $light-gray: #707070;
+
 $font: "new-hero", sans-serif;
 $font2: "nimbus-sans", sans-serif;
+
+
+$card-border-radius: 0;
+
+$btn-border-radius:           0;
+$btn-border-radius-sm:        0;
+$btn-border-radius-lg:        0;
+
+$input-btn-padding-y:         .75rem;
+$input-btn-padding-x:         2rem;
+$input-btn-font-family:       $font;
+$input-btn-font-size:         1.25rem;
+$btn-font-weight:             700;
+
