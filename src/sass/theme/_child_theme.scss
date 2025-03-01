@@ -14,8 +14,16 @@ body{
 
 
 .nav-gradient{
-	  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.75));
+	  background-image: linear-gradient(to top, rgba($blue,0), rgba($blue,.85));
+	  	@include media-breakpoint-up(lg) { padding:2rem 0; }
 }
+
+.nav-link {
+    color: $white;
+    transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out;
+}
+
+
 p{
 	font-family: $font2;
 	font-size: 1.125rem;
@@ -62,10 +70,10 @@ background-position:right 2rem bottom 1rem;
 
 address{
 	p, a{
-		font-size:1.5rem;
-		color: $tan;
+		font-size:1rem;
+		color: $tan !important;
 		@include media-breakpoint-up(lg) {
-			font-size:2rem;
+			font-size:1.5rem;
 		}
 
 }
@@ -113,7 +121,7 @@ hr {
 
 .bg-tan{
 	background-color: $tan;
-	color: $dark-gray !important;
+	//color: $dark-gray !important;
 	p{
 		color: $dark-gray;
 	}
@@ -133,6 +141,7 @@ hr {
 
 .bg-light-gray{
 	background-color: $light-gray;
+		color: $white;
 }
 
 .bg-gray{
@@ -141,22 +150,29 @@ hr {
 
 .bg-dark-gray{
 	background-color: $dark-gray;
+	color: $white;
 }
 
 .bg-white-75{
 	background-color: $white-75;
 }
 
-// .btn-tan{
-// 	background-color: $tan;
-// 	color: $white;
-// 	&:hover{
-// 			background-color: $tan !important;
+#hero{
+	h1{
+		font-size:2rem;
+	@include media-breakpoint-up(md) { font-size: 3.5rem; }
+	@include media-breakpoint-up(lg) { font-size: 4rem;}
+	@include media-breakpoint-up(xl) { font-size: 5.3125rem;}
+	}
+}
 
-//   filter: brightness(85%);
-// 	}
-// }
 
+.overlay-text{
+	text-transform: uppercase;
+	position:absolute;
+
+	@include media-breakpoint-up(md) { 	}
+}
 
 .text-white{
 color: #fff;
@@ -284,9 +300,18 @@ p:empty{
 	
 	&.mobile{
 		position:relative;
-	}
-	
-}
+		min-height:12rem;
+			@include media-breakpoint-up(lg) {
+				min-height:15rem;
+				}
+			@include media-breakpoint-up(xl) {
+			 	min-height:18rem;
+				}
+			@include media-breakpoint-up(xxl) {
+			 	min-height:20rem;
+				}
+			}
+		}
 
 
 
