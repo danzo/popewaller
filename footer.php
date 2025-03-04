@@ -40,7 +40,7 @@ if (!is_page('contact')) {
 
 					<div class="site-info">
 
-<p class="copyright">&copy; <?php echo date("Y"); ?> Pope Waller, PLLC. All rights reserved.</p>
+<p class="copyright">&copy; <?php echo date("Y"); ?> PopeWaller, PLLC. All rights reserved.</p>
 <?php // understrap_site_info(); ?>
 
 					</div><!-- .site-info -->

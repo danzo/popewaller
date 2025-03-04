@@ -24,10 +24,10 @@ if ( ! has_custom_logo() ) { ?>
 	<?php else : ?>
 
 		<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
-			<?php echo '<img src="' . esc_url( $uploads['baseurl'] . '/2025/02/pope-waller-logo-mark-tan.svg' ) . '" width="100" alt="" role="presentation">'; ?>
+			<?php echo '<img src="' . esc_url( $uploads['baseurl'] . '/2025/02/pope-waller-full-logo-tan.svg' ) . '" width="160" alt="" role="presentation">'; ?>
 		</a>
 
 	<?php endif; ?>
 
 	<?php
-} 
+}
