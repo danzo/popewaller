@@ -18884,6 +18884,9 @@ p.copyright {
   color: #707070;
   margin-bottom: 0;
 }
+p:empty {
+  margin: 0;
+}
 
 .partner-title {
   font-family: "new-hero", sans-serif;
@@ -18922,10 +18925,6 @@ address p, address a {
 address a:hover {
   color: #D7D1BF;
   text-decoration: none;
-}
-
-.tile {
-  corner-radius: 0;
 }
 
 h1, .h1 {
@@ -18989,29 +18988,6 @@ hr {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-#hero h1, #hero .h1 {
-  font-size: 2rem;
-}
-@media (min-width: 768px) {
-  #hero h1, #hero .h1 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) {
-  #hero h1, #hero .h1 {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 1200px) {
-  #hero h1, #hero .h1 {
-    font-size: 5.3125rem;
-  }
-}
-
-.overlay-text {
-  text-transform: uppercase;
-  position: absolute;
-}
 .text-white {
   color: #fff;
 }
@@ -19044,6 +19020,30 @@ hr {
   font-size: 1.5rem;
 }
 
+#hero h1, #hero .h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  #hero h1, #hero .h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #hero h1, #hero .h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero h1, #hero .h1 {
+    font-size: 5.3125rem;
+  }
+}
+
+.overlay-text {
+  text-transform: uppercase;
+  position: absolute;
+  height: auto;
+}
 .flex-list {
   position: relative;
   margin: 1em;
@@ -19075,6 +19075,7 @@ hr {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  corner-radius: 0;
 }
 .tile.industry {
   background-color: rgba(255, 255, 255, 0.75);
@@ -19101,10 +19102,6 @@ hr {
   font-weight: 700;
   color: #013C4B;
   align-self: flex-end;
-}
-
-p:empty {
-  margin: 0;
 }
 
 .location-overlay.desktop {

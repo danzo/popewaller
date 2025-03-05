@@ -1,6 +1,4 @@
-*{
-	font-family: $font;
-}
+*{ font-family: $font; }
 
 
 body{
@@ -33,6 +31,10 @@ p{
 			color: #707070;
 			margin-bottom:0;
 		}
+		
+		&:empty{
+			margin:0;
+		}
 }
 
 .partner-title{
@@ -42,59 +44,48 @@ p{
 
 .bg{
 	background-size:cover;
-  // height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex:align-items-center;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	flex:align-items-center;
 }
 
 .accent{
-background-repeat:no-repeat;
+	background-repeat:no-repeat;
 
-&.left-center{
-background-position:left 2rem bottom 50%;
-}
-&.right-center{
-background-position:right 2rem bottom 50%;
-}
-&.right-bottom{
-background-position:right 2rem bottom 1rem;
-}
-}
-
-// font-family: "nimbus-sans", sans-serif;
-// font-weight: 300;
-// font-style: normal;
-
+	&.left-center{
+		background-position:left 2rem bottom 50%;
+		}
+	&.right-center{
+		background-position:right 2rem bottom 50%;
+		}
+	&.right-bottom{
+		background-position:right 2rem bottom 1rem;
+		}
+	}
 
 
 address{
 	p, a{
 		font-size:1rem;
 		color: $tan !important;
-		@include media-breakpoint-up(lg) {
-			font-size:1.5rem;
+			@include media-breakpoint-up(lg) {
+				font-size:1.5rem;
+			}
 		}
-
-}
-	a{
-		&:hover{
-			color: $tan;
-			text-decoration:none;
+		a{
+			&:hover{
+				color: $tan;
+				text-decoration:none;
+			}
 		}
-}
-}
+	}
 
-.tile{
-	corner-radius:0;
 
-}
 
 // Headings
 
 h1{
 	text-transform:uppercase;
-	//color: $white;
 }
 
 h2,h3{
@@ -157,22 +148,7 @@ hr {
 	background-color: $white-75;
 }
 
-#hero{
-	h1{
-		font-size:2rem;
-	@include media-breakpoint-up(md) { font-size: 3.5rem; }
-	@include media-breakpoint-up(lg) { font-size: 4rem;}
-	@include media-breakpoint-up(xl) { font-size: 5.3125rem;}
-	}
-}
 
-
-.overlay-text{
-	text-transform: uppercase;
-	position:absolute;
-
-	@include media-breakpoint-up(md) { 	}
-}
 
 .text-white{
 color: #fff;
@@ -194,6 +170,7 @@ color: #fff;
 color: $tan;	
 }
 
+
 .weight-200{
 	font-weight:200;
 }
@@ -205,6 +182,30 @@ color: $tan;
 .f-24{
 	font-size:1.5rem;
 }
+
+
+
+
+
+#hero{
+	h1{
+		font-size:2rem;
+		@include media-breakpoint-up(md) { font-size: 3.5rem; }
+		@include media-breakpoint-up(lg) { font-size: 4rem;}
+		@include media-breakpoint-up(xl) { font-size: 5.3125rem;}
+	}
+}
+
+
+.overlay-text{
+	text-transform: uppercase;
+	position:absolute;
+	height:auto;
+
+	@include media-breakpoint-up(md) { 	}
+}
+
+
 
 .flex-list {
     position: relative;
@@ -232,12 +233,15 @@ color: $tan;
 }
 
 
-// SPECIAL EXCEPTIONS...
+
+
+
 
 .tile{
 	padding: 2rem;
 	display:flex;
 	flex-direction:column;
+	corner-radius:0;
 
 	&.industry{
 		background-color: $white-75;
@@ -275,9 +279,6 @@ color: $tan;
 
 
 
-p:empty{
-	margin:0;
-}
 
 
 
